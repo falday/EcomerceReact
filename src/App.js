@@ -1,26 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
- import { Navbar } from './components/Nvbar/Navbar'; 
-import { Footer } from './components/Footer/Footer';
-import Box from "@mui/material/Box";
-import {
-  useState
-} from 'react'
-
-
+import "./App.css";
+import ItemListContainer from "./components/ItemList/ItemListContainer";
+import { Navbar } from "./components/Nvbar/Navbar";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { ItemDetailContainer } from "./components/ItemDetail/ItemDetailContainer";
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-      < body style = {
-        {
-          height: "90vh"
-        }
-      } > </body>
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route element={<Navbar />}>
+          <Route path="/" element={<ItemListContainer />} />
+          < Route path = "/category/:categoryName"
+          element = {
+            < ItemListContainer / >
+          }
+          />
+          < Route path = "/itemDetail/:codigo"
+          element = {
+            < ItemDetailContainer / >
+          }
+          / >
+          <Route path="*" element={<h1> La ruta no existe </h1>} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
 export default App;
-

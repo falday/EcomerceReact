@@ -1,19 +1,33 @@
-.cointanerNabvar {
-    
-    background-color: #333;
-        overflow: hidden;
 
-      /* .navbar li {
-        float: left;
-        display: block;
-        color: white;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-      }
-      .navbar a:hover {
-        background-color: #ddd;
-        color: black;
+.containerNavbar {
+  
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  background-color: steelblue;
+  align-items: center;
+  padding: 10px;
+}
 
-    background-color: blue; */
+a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.categories{
+  height: 2rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 20px;
+}
+.categories a {
+  background-color: beige;
+  padding: 10px 20px;
+  color: #7F669D;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
 }
