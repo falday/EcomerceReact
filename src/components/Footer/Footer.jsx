@@ -1,74 +1,76 @@
-import Styles from "./Footer.module.css";
-import * as React from "react";
-import AppBar from "@mui/material/AppBar";
-import Box from "@mui/material/Box";
-import Toolbar from "@mui/material/Toolbar";
-import Typography from "@mui/material/Typography";
-import Container from "@mui/material/Container";
+import React from "react";
+import { styled } from "@mui/system";
+import { Typography, Link, Grid, Container } from "@mui/material";
 
-export const Footer = () => {
+const FooterContainer = styled("footer")`
+  background-color: #b87c58a3;
+  padding: 2rem;
+  margin-top: auto;
+`;
+
+const Footer = () => {
   return (
-    <AppBar position="Button">
-      <Container maxWidth="xl">
-        <Box
-          sx={{
-            flexGrow: 1,
-
-            display: { xs: "flex", md: "flex" },
-            flexDirection: { xs: "column", md: "row" },
-          }}
+    <FooterContainer>
+      <Container maxWidth="md">
+        <Grid container spacing={4}>
+          <Grid item xs={12} sm={6}>
+            <Typography variant="h6" gutterBottom>
+              Síguenos en redes sociales:
+            </Typography>
+            <ul>
+              <li>
+                <Link
+                  href="https://www.facebook.com/FerreShop"
+                  color="inherit"
+                  target="_blank"
+                >
+                  Facebook
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="https://www.twitter.com/FerreShop"
+                  color="inherit"
+                  target="_blank"
+                >
+                  Twitter
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="https://www.instagram.com/FerreShop"
+                  color="inherit"
+                  target="_blank"
+                >
+                  Instagram
+                </Link>
+              </li>
+            </ul>
+          </Grid>
+          <Grid item xs={12} sm={6}>
+            <Typography variant="h6" gutterBottom>
+              Horarios de atención:
+            </Typography>
+            <Typography variant="body1" gutterBottom>
+              Lunes a Viernes: 8:00 AM - 6:00 PM
+            </Typography>
+            <Typography variant="body1" gutterBottom>
+              Sábados: 9:00 AM - 1:00 PM
+            </Typography>
+          </Grid>
+        </Grid>
+        <Typography
+          variant="body2"
+          color="textSecondary"
+          align="center"
+          style={{ marginTop: "20px" }}
         >
-          <Box
-            sx={{
-              flexGrow: 1,
-              flexDirection: "column",
-              display: { xs: "flex", md: "flex" },
-            }}
-          >
-            <Typography variant="h6" Wrap component="a">
-              Horario de atención
-            </Typography>
-            <div>
-              <p>Lunes - Viernes: 8am - 5pm</p>
-              <p>Sábado: 9am - 2pm Domingo: cerrado</p>
-            </div>
-          </Box>
-
-          <Box
-            sx={{
-              flexGrow: 1,
-              flexDirection: "column",
-              display: { xs: "flex", md: "flex" },
-            }}
-          >
-            <Typography variant="h6" noWrap component="a">
-              Contacto
-            </Typography>
-            <div>
-              <p>Dirección: 123 Main Street, Ciudad, Estado 12345</p>
-              <p>Teléfono: (123) 456-7890</p>
-              <p>Email: info@tuferreteria.com</p>
-            </div>
-          </Box>
-
-          <Box
-            sx={{
-              flexGrow: 1,
-              flexDirection: "column",
-              display: { xs: "flex", md: "flex" },
-            }}
-          >
-            <Typography variant="h6" noWrap component="a">
-              Nuestras Redes
-            </Typography>
-            <div>
-              <p href="#">Facebook</p>
-              <p href="#">Twitter</p>
-              <p href="#">Instagram</p>
-            </div>
-          </Box>
-        </Box>
+          &copy; {new Date().getFullYear()} FerreShop. Todos los derechos
+          reservados.
+        </Typography>
       </Container>
-    </AppBar>
+    </FooterContainer>
   );
 };
+
+export default Footer;

@@ -4,7 +4,7 @@
   height: 10vh;
   display: flex;
   justify-content: space-between;
-  background-color: steelblue;
+  background-color: #b87c58;
   align-items: center;
   padding: 10px;
 }
@@ -25,7 +25,7 @@ a {
 .categories a {
   background-color: beige;
   padding: 10px 20px;
-  color: #7F669D;
+  color: #939d66;
   width: 100px;
   display: flex;
   justify-content: center;

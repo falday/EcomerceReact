@@ -1,10 +1,11 @@
-export const products = [{
+export const products = [
+    {
         "codigo": 1,
-        "nombre": "destornillador",
+        "title": "destornillador",
+       "price": 1200,
         "descripcion": "largo= 4pulg ancho= 6mm",
-        "precio": 3,
         "stock": 3,
-        "rubro": "herramientas",
+        "category": "herramientas",
         "img": "https://catalogos.devenado.ar//IMG/destornillador-phillips-de-golpe-6-mm-x-150-mm-industrial-total-id29024_1-w640-h360-m1.jpg"
 
     },
@@ -41,15 +42,7 @@ export const products = [{
         "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuDabfsRGkeo9So13Cc2T61jSK0XTAn5_UoQ&usqp=CAU"
     },
 
-    {
-        "codigo": 5,
-        "nombre": "Clavo Punta Paris",
-        "descripcion": "venta x KG",
-        "precio": 12,
-        "stock": 2,
-        "rubro": "buloneria",
-        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKgVOYCTNmtF7n1e16q3OSVMzyAtf6A5-w2f5IOvaGsPqb0tplFy5ASAfs3ZdHl1pUpI4&usqp=CAU"
-    },
+    
 
     {
         "codigo": 6,
@@ -79,5 +72,15 @@ export const products = [{
         "stock": 2,
         "rubro": "buloneria",
         "img": "https://http2.mlstatic.com/D_NQ_NP_619594-MLA32895338265_112019-O.webp"
-    }
+    },
+    
+    {
+        "codigo": 5,
+        "nombre": "Clavo Punta Paris",
+        "descripcion": "venta x KG",
+        "precio": 12,
+        "stock": 2,
+        "rubro": "buloneria",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKgVOYCTNmtF7n1e16q3OSVMzyAtf6A5-w2f5IOvaGsPqb0tplFy5ASAfs3ZdHl1pUpI4&usqp=CAU"
+    },
 ]

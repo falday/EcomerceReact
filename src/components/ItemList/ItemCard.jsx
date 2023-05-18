@@ -17,17 +17,17 @@ const ItemCard = ( { item } ) => {
       <CardMedia sx={{ height: 140 }} image={item.img} title="green iguana" />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-          {item.nombre}
+          {item.title}
         </Typography>
         <Typography variant="body2" color="text.secondary">
           {item.descripcion}
         </Typography>
         <Typography variant="h5" color="primary">
-          ${item.precio * 450}
+          ${item.price}
         </Typography>
       </CardContent>
       <CardActions style={{}}>
-        <Link to={`/itemDetail/${item.codigo}`}>
+        <Link to={`/itemDetail/${item.id}`}>
           <Button
             variant="contained"
             size="small"
