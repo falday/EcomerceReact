@@ -3,9 +3,9 @@
 
 ### Es un ecomerce de una ferreteria para el proyecto  de codereHouse del curso de react
 
-##  Se deja archivo gif  para demostrar la funcionalidad
+#  Se deja archivo gif  para demostrar la funcionalidad
 
-## Se vieron y utilizan las siguientes librerias :
+##Se vieron y utilizan las siguientes librerias :
     "firebase": "^9.21.0",
     "formik": "^2.2.9",
     "react": "^18.2.0",
@@ -19,7 +19,8 @@
     "web-vitals": "^2.1.4",
     "yup": "^1.1.1"
 
-## o j o ,  las variables de entorno fueron utilizadas pero no se incorporaron  los datos del .gitignore/.env, para facilitar su vista del proyecto
+## o j o ,  
+las variables de entorno fueron utilizadas pero no se incorporaron  los datos del .gitignore/.env, para facilitar su vista del proyecto
 
 igualmente dejo las variables de entorno:
 - REACT_APP_APIKEY=
