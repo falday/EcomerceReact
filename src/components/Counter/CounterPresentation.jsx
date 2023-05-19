@@ -13,7 +13,7 @@ const CounterPresentation = ({ sumar, restar, counter, onAdd }) => {
         Sumar
       </Button>
 
-      <div style={{ marginBottom: "20px", display: "flex", gap: "30px" }}></div>
+      <div style={{ margin: "20px", display: "flex", gap: "30px" }}></div>
       <Button startIcon={<ShoppingCartIcon />} variant="contained" onClick={() => onAdd(counter)}>
         Agregar al carrito
       </Button>

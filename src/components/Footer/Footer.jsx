@@ -27,15 +27,7 @@ const Footer = () => {
                   Facebook
                 </Link>
               </li>
-              <li>
-                <Link
-                  href="https://www.twitter.com/FerreShop"
-                  color="inherit"
-                  target="_blank"
-                >
-                  Twitter
-                </Link>
-              </li>
+              
               <li>
                 <Link
                   href="https://www.instagram.com/FerreShop"

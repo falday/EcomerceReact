@@ -1,28 +1,7 @@
 import React, { useState } from "react";
 
-const Form = () => {
+const Form = (userData,envioDeFormulario,handleChange) => {
   
-    const [userData, setUserData] = useState({
-        nombre: "",
-        apellido: "",
-        telefono: ""
-        
-    })
-
-    
-   const handleChange = (e) => {
-    setUserData({...userData, [e.target.name]: e.target.value});
-  } 
-
-  const envioDeFormulario = (evento)=>{
-    evento.preventDefault()
-    // LOGIN
-  
-    console.log(userData)
-
-  }
-  
-
   return (
     <div>
       <h1>Estamos en el formulario</h1>
