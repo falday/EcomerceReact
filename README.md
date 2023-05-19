@@ -5,7 +5,7 @@
 
 #  Se deja archivo gif  para demostrar la funcionalidad
 
-##Se vieron y utilizan las siguientes librerias :
+## Se vieron y utilizan las siguientes librerias :
     "firebase": "^9.21.0",
     "formik": "^2.2.9",
     "react": "^18.2.0",
