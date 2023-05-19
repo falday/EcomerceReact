@@ -3,7 +3,7 @@
 
 ### Es un ecomerce de una ferreteria para el proyecto  de codereHouse del curso de react
 
-##  Se deja archivo readme  para demostrar la funcionalidad
+##  Se deja archivo gif  para demostrar la funcionalidad
 
 ## Se vieron y utilizan las siguientes librerias :
     "firebase": "^9.21.0",
